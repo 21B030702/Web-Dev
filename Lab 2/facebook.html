@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Facebook — Выполните вход или зарегистрируйтесь</title>
+        <link rel="icon" type="img/png" href="https://www.facebook.com/images/fb_icon_325x325.png">
+        <style>
+            body{
+                color:#1c1e21;
+                font-family: Helvetica, Arial, sans-serif;
+                margin: 0;
+            }
+            h2{
+                font-weight: normal;
+                font-size: 27px;
+            }
+            input{
+                padding: 14px 16px;
+                margin: 0 0 3% 0;
+                width: 90%;
+                border-radius: 6px;
+                border:#e3d9d9 solid 1px;
+                font-size:17px;
+            }
+            input::placeholder{
+                color: #a19696;
+            }
+            input:focus::placeholder{
+                color: #d4caca;
+            }
+            button{
+                margin: 0 0 3% 0;
+                padding: 0px 16px;
+                height: 48px;
+                width: 100%;
+                border: none;
+                border-radius: 6px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            input:focus{
+                outline-color: #1877f2;
+                caret-color: #1877f2;
+            }
+            hr{
+                border-top: 1px #dadde1;
+                border-left: 1px #dadde1;
+                border-bottom: 1px solid #dadde1;
+            }
+            #main{
+                padding:10% 10% 5% 10%;
+                display:inline-block;
+                background-color: #f0f2f5;
+                display:flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                flex-wrap: wrap;
+            }
+            #footer{
+                font-size: 12px;
+                background-color: white;
+                clear:both;
+                color: #8a8d91;
+                padding:1% 18%;
+            }
+            #footer a{
+                word-spacing: normal;
+                white-space: nowrap;
+            }
+            #table{
+                margin: -5% 0 5% 0;
+                background-color: white;
+                border-radius: 8px;
+                height: 310px;
+                width: 365px;
+                box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+                padding:4%;
+                text-align: center;
+            }
+            #left{
+                width: 450px;
+                height: 300.08px;
+            }
+            #right{
+                width: 396px;
+                height: 496px;
+            }
+            #right p{
+                text-align: center;
+                font-size:14px;
+            }
+            #button1{
+                background-color:#1877f2; 
+                color:white; 
+                font-size:20px; 
+                padding: 0px 16px;
+            }
+            #button1:hover{
+                background-color:#166ddf;
+            }
+            #button2{
+                background-color:#42b72a; 
+                color:white; 
+                font-size:17px; 
+                padding: 0px 16px; 
+                width:65%; 
+                margin:5%;
+            }
+            #button2:hover{
+                background-color:#3ba226;
+            }
+            #create{
+                color:black;
+                font-weight:bold;
+            }
+            #forgot{
+                color:#1877f2;
+            }
+            #pic{
+                position: relative;
+                left:-30px;
+                bottom:-30px;
+            }
+            .extra{
+                color: #8a8d91;
+            }
+            a:link{
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <div id="left">
+                <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="facebook" width="301.06px" height="106px" id="pic">
+                <h2>Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</h2>
+            </div>
+            <div id="right">
+                <div id="table">
+                    <input type="text" placeholder="Электронный адрес или номер телефона" required>
+                    <input type="password" placeholder="Пароль" required>
+                    <button id = "button1" type="submit">Вход</button>
+                    <p style="margin:5px 0 20px 0"><a id="forgot" href="https://www.facebook.com/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjc1MzQ2NzQzLCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&ars=facebook_login">Забыли пароль?</a></p>
+                    <hr>
+                    <button id = "button2">Создать новый аккаунт</button>
+                </div>
+                <p>
+                    <a id ="create" href="https://www.facebook.com/pages/create/?ref_type=registration_form">Создать Страницу</a> знаменитости, музыкальной группы или компании.
+                </p>
+            </div>
+        </div>
+        <div id="footer">
+            <p style="word-spacing: 8px; line-height: 1.5em;"><span style="color:#737373">Русский</span> <a class="extra">English (US)</a> <a class="extra">Türkçe</a> <a class="extra">Bahasa</a> 
+                <a class="extra">Indonesia</a> <a class="extra">中文(简体)</a> <a class="extra">Қазақша</a> <a class="extra">Deutsch</a> <a class="extra">한국어</a> 
+                <a class="extra">Shqip</a> <a class="extra">Español</a> <a class="extra">Português (Brasil)</a>
+                <button style="width:33px; height:20px; padding:0 3px; border:2px; border-color:767676; text-align:center; line-height: 12px; margin: 3px 0;
+                border:#dadde1 1px solid; border-radius: 2px;">➕</button></p>
+            <hr>
+            <p style="word-spacing: 15px; line-height: 1.5em;"> <a class="extra">Регистрация</a> <a class="extra">Вход</a> <a class="extra">Messenger</a> 
+                <a class="extra">Facebook Lite</a> 
+                <a class="extra">Watch</a> <a class="extra">Места</a> <a class="extra">Игры</a> <a class="extra">Marketplace</a> <a class="extra">Meta Pay</a>
+                <a class="extra">Oculus</a> <a class="extra">Portal</a> <a class="extra">Instagram</a> <a class="extra">Bulletin</a> 
+                <a class="extra">Благотворительные акции</a> <a class="extra">Услуги</a> <a class="extra">Центр информации о выборах</a>
+                <a class="extra">Политика конфиденциальности</a> <a class="extra">Центр конфиденциальности</a> <a class="extra">Группы</a> 
+                <a class="extra">Информация</a> <a class="extra">Создать рекламу</a> <a class="extra">Создать Страницу</a> 
+                <a class="extra">Разработчикам</a> <a class="extra">Вакансии</a> <a class="extra">Файлы cookie</a> 
+                <a class="extra">Рекламные предпочтения <span style="color:rgb(116, 116, 209); font-weight: bold;">i</span></a>
+                <a class="extra">Условия использования</a> <a class="extra">Справка</a> 
+                <a class="extra">Загрузка контактов и лица, не являющиеся пользователями</a> 
+            <p style="word-spacing: normal; color:#737373;">Meta © 2023</p>
+        </footer>
+    </body>
+</html>
