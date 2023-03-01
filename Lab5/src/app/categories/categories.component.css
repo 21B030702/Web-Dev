@@ -1,0 +1,17 @@
+div {
+  margin-top: 2%;
+  width: 20%;
+  margin-left: 40%;
+  text-align: center;
+}
+
+fieldset {
+  margin-top: 25px;
+  border-color: #000000;
+}
+
+a {
+  color: #000000;
+  font-weight: bold;
+  font-size: 28px;
+}

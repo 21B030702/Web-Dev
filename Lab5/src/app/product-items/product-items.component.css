@@ -1,0 +1,12 @@
+.prods {
+  display: flex;
+  flex-flow: column;
+  width: 700px;
+}
+
+img {
+  max-width: 250px;
+  max-height: 250px;
+  width: auto;
+  height: auto;
+}
